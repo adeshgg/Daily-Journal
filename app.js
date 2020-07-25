@@ -5,7 +5,7 @@ const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://admin-adesh:test-123@cluster0.korh5.mongodb.net/<blogDB>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology : true});
+mongoose.connect("mongodb+srv://<user>:<password>@cluster0.korh5.mongodb.net/<blogDB>?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology : true});
 
 const postSchema = {
   title : String,
